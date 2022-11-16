@@ -124,6 +124,7 @@ public class HistoryItemActivity  extends AppCompatActivity {
             if (i > 0) layoutParams.addRule(RelativeLayout.BELOW, 42000 + (i-1));
             textView.setLayoutParams(layoutParams);
             textView.setGravity(Gravity.CENTER);
+            textView.setWidth(400);
             relativeLayout.addView(textView);
         }
         TextView textView = new TextView(HistoryItemActivity.this);
@@ -139,6 +140,7 @@ public class HistoryItemActivity  extends AppCompatActivity {
         layoutParams.addRule(RelativeLayout.BELOW, 42000 + (velocities.length - 1));
         textView.setLayoutParams(layoutParams);
         textView.setGravity(Gravity.CENTER);
+        textView.setWidth(400);
         relativeLayout.addView(textView);
     }
 

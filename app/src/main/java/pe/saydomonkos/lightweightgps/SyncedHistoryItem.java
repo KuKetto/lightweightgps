@@ -122,6 +122,7 @@ public class SyncedHistoryItem extends AppCompatActivity {
             if (i > 0) layoutParams.addRule(RelativeLayout.BELOW, 42000 + (i-1));
             textView.setLayoutParams(layoutParams);
             textView.setGravity(Gravity.CENTER);
+            textView.setWidth(400);
             relativeLayout.addView(textView);
         }
     }
